@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | QR code component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      @font-face {
+        font-family: outfitFont;
+        src: url("./Outfit/static/Outfit-Bold.ttf") format("truetype");
+      }
+      @font-face {
+        font-family: outfitwordFont;
+        src: url("./Outfit/static/Outfit-Light.ttf") format("truetype");
+      }
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-color: hsl(212, 45%, 89%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .main-container {
+        background-color: hsl(0, 0%, 100%);
+        width: 280px;
+        height: 460px;
+        border-radius: 20px;
+        margin-top: 30px;
+        display: block;
+      }
+      .qrcode-img {
+        width: 250px;
+        height: 250px;
+        border-radius: 10px;
+        margin-left: 15px;
+        margin-top: 20px;
+        margin-bottom:20px;
+      }
+      .slogan {
+        font-family: outfitFont;
+        font-size: 20px;
+       
+      
+      }
+      .word-note{
+        font-family: outfitwordFont;
+        font-size: 13px;
+        color: hsl(220, 15%, 55%);
+      
+      }
+      
+    </style>
+  </head>
+  <body>
+    <div class="main-container">
+      <img class="qrcode-img" src="./images/image-qr-code.png" />
+      <label style="margin-left: 30px" class="slogan">Improve your front-end</label>
+      <label style="margin-left: 25px;" class="slogan">skills by building projects</label>
+      <div style="height:20px;"></div>
+      <label class = "word-note" style="margin-left: 38px">Scan the QR code to visit Frontend</label>
+      <label class = "word-note" style="margin-left: 34px">Mentor and take your coding skills to</label>
+      <label class = "word-note" style="margin-left: 100px">the next level</label>
+
+   
+    </div>
+  </body>
+</html>
